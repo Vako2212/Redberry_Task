@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>თანამშრომლის ინფო</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../inlinecss/main.css">
+    <link rel="stylesheet" href="../inlinecss/media_query.css">
+    <script src="../bootstrap/js/bootstrap.js"></script>
+</head>
+
+<body>
+    <div id="desktop_view">
+        <div id="header">
+            <div id="chevron_div">
+                <svg onclick="history.back()" xmlns="http://www.w3.org/2000/svg " id="chevron_left" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                </svg>
+            </div>
+            <div class="d-flex justify-content-center" id="headline">
+                <div class="" id="headline_prsonal_info">
+                    <span id="personal_headline_1">თანამშრომლის ინფო</span>
+                </div>
+                <div class="ms-4">
+                    <a id="personal_headline_2" href="./laptop_info.html">ლეპტოპის მახასიათებელი</a>
+                </div>
+            </div>
+        </div>
+        <div id="personal_info" class="mx-auto d-lg-shadow-lg p-3 mb-5 bg-body rounded">
+            <form class=" mx-auto mb-4 pb-4" id="personal_info_form">
+                <div class="container d-flex justify-content-around mt-4">
+                    <div class="row w-full" id="names_div">
+                        <div class="col" id="name_div">
+                            <label class="form-label">სახელი</label>
+                            <input type="text" class="form-control  w-100" placeholder="გრიშა" id="names">
+                            <div class="form-text">მინიმუმ 2 სიმბოლო,ქართული ასოები</div>
+                        </div>
+                        <div class="col" id="lastname_div">
+                            <label class="form-label">გვარი</label>
+                            <input type="text" class="form-control w-100" placeholder="ბაგრატიონი" id="lastname">
+                            <div class="form-text">მინიმუმ 2 სიმბოლო,ქართული ასოები</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="form_div">
+                    <div class="mt-4" id="team_select">
+                        <select class="form-select " aria-label="Default select example" id="team">
+                            <option value="" selected>თიმი</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="mt-4" id="posistion_select">
+                        <select class="form-select  positions" aria-label="Default select example" id="position">
+                            <option value="" selected>პოზიცია</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="mt-4" id="meil_div">
+                        <label class="form-label">მეილი</label>
+                        <input type="email" class="form-control  w-100" placeholder="grisha666@redberry.ge" id="name">
+                        <div class="form-text">უნდა მთავრდებოდეს @redberry.ge-ით</div>
+                    </div>
+                    <div class="mt-5" id="phone_div">
+                        <label class="form-label" id="phone_label">ტელეფონის ნომერი</label>
+                        <input type="text" class="form-control  w-100" placeholder="+995 598 00 07 01" id="phone">
+                        <div class="form-text">უნდა აკმაყოფილებდეს ქართული მობ-ნომრის ფორმატს</div>
+                    </div>
+
+                    <a type="button"  class="mt-5 btn float-end " id="next_btn" onclick="Validate()">შემდეგი</a>
+                </div>
+
+
+            </form>
+        </div>
+
+        <div class="d-flex justify-content-center mt-4">
+            <img src="../img/main_redberry_logo.png" id="main_redberry_logo">
+        </div>
+    </div>
+<div class="d-block d-sm-none">
+    <div id="bg_headline">
+        <div id="chevron_div_sm">
+            <svg xmlns="http://www.w3.org/2000/svg " id="chevron_left" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+            </svg>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="mt-1">
+                <span class="">თანამშრომლის ინფო</span> <br>
+                <span class="text-center d-block d-sm-none pb-3" id="sm_text">1/2</span>
+            </div>
+            <div class="ms-4 d-none d-sm-block">
+                <a href="./laptop_info.html">ლეპტოპის მახასიათებელი</a>
+            </div>
+        </div>
+    </div>
+    <div class="m-2 mt-5 pt-2 p-3" >
+        <form class="mt-5">
+            <div class="row mb-3">
+                <label for="name_input" class="col-sm-2 ms-1 col-form-label input_text_t">სახელი</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control py-3 px-3"  id="name_input" placeholder="გრიშა" required>
+                </div>
+                <label for="name_input"  class="col-sm-2 ms-1 col-form-label input_text_b">მინიმუმ 2 სიმბოლო, ქართული ასოები</label>
+            </div>
+            <div class="row mb-3">
+                <label for="lastname_input" class="col-sm-2 ms-1 col-form-label input_text_t">გვარი</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control py-3 px-3" id="lastname_input" placeholder="ბაგრატიონი" required>
+                </div>
+                <label for="lastname_input" class="col-sm-2 ms-1 col-form-label input_text_b">მინიმუმ 2 სიმბოლო, ქართული ასოები</label>
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm-10">
+                    <select class="form-select py-3 px-3" id="personal_position_team" aria-label="Default select example">
+                        <option selected>თიმი</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm-10">
+                    <select class="form-select py-3 px-3" id="personal_position_select" aria-label="Default select example">
+                        <option selected>პოზიცია</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="mail_input" class="col-sm-2 ms-1 col-form-label input_text_t">სახელი</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control py-3 px-3" id="mail_input" placeholder="grish666@redberry.ge" required>
+                </div>
+                <label for="mail_input" class="col-sm-2 ms-1 col-form-label input_text_b">უნდა მთავრდებოდეს @redberry.ge-ით</label>
+            </div>
+            <div class="row mb-3">
+                <label for="phone_input" class="col-sm-2 ms-1 col-form-label input_text_t">სახელი</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control py-3 px-3" id="phone_input" placeholder="+995 598 00 07 01" required>
+                </div>
+                <label for="phone_input" class="col-sm-2 ms-1 col-form-label input_text_b">ქართული მობ-ნომრის ფორმატი</label>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 pt-3">
+                    <button type="submit" class="btn float-end mb-4" id="personal_btn">შემდეგი</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+<script src="../js/form_validation.js"></script>
+</html>

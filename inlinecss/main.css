@@ -1,0 +1,260 @@
+#root_div {
+    margin-top: 20px;
+}
+
+#redberry {
+    margin-top: 3%;
+}
+
+#redberry_logo {
+    width: 112px;
+    height: 18px;
+}
+
+#logo1_div {
+    margin-top: 5%;
+}
+
+#logo1 {
+    width: 781px;
+    height: 482px;
+}
+
+#btn_div {
+    margin-top: 5%;
+}
+
+#btn-1,
+#btn-2 {
+    margin-top: 2%;
+    width: 387px;
+    height: 60px;
+    background-color: #62A1EB;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+#personal_info {
+    align-items: center;
+    width: 1226px;
+    height: 740px;
+    margin-top: 2.5%;
+
+}
+
+#root_personal_info {
+    background-color: #E5E5E5;
+}
+
+#headline {
+    margin-top: 2%;
+}
+
+#headline_prsonal_info {
+    border-bottom: 2px solid;
+}
+
+#main_redberry_logo {
+    width: 85px;
+    height: 85px;
+    border-radius: 50px;
+}
+
+#chevron_div {
+    position: absolute;
+    margin-left: 30px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50px;
+    background-color: #D9D9D9;
+}
+
+#chevron_left {
+    margin-left: 7px;
+    margin-top: 5px;
+}
+
+#name,
+#lastname ,#names,#phone{
+    width: 407px;
+    height: 60px;
+    border-color: #8AC0E2;
+}
+
+
+
+#name_div,
+#lastname_div{
+    width: 407px;
+}
+
+#personal_info_form {
+    max-width: 890px;
+    height: 600px;
+}
+
+#team {
+    width: 800px;
+    height: 60px;
+    background-color: #EBEBEB;
+    color: black;
+}
+#position{
+    width: 800px;
+    height: 60px;
+    background-color: #EBEBEB;
+    color: black;
+}
+
+#form_div {
+    width: 800px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#next_btn {
+    background-color: #62A1EB;
+    color: #FFFFFF;
+    width: 150px;
+    height: 40px;
+}
+
+#laptop_info {
+    width: 1226px;
+    height: 1571px;
+}
+
+#laptop_form {
+    width: 878px;
+    height: auto;
+}
+
+#img_upload_div {
+    border-style: dashed;
+    border-radius: 18px;
+    border-width: 2px;
+    border-color: #4386A9;
+    width: 878px;
+    height: 423px;
+    background-color: #EBEBEB;
+    color: #4386A9;
+}
+
+#img_text_div {
+    align-items: center;
+    text-align: center;
+    width: 195px;
+    height: 76px;
+    margin: 0;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#upload_btn {
+    width: 200px;
+    height: 45px;
+    background-color: #62A1EB;
+    color: #FFFFFF;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#select_col,#cpu {
+    margin-top: 32px;
+}
+
+#save_btn {
+    width: 219px;
+    height: 60px;
+    background-color: #62A1EB;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+
+#back {
+    font-size: 18px;
+    color: #62A1EB;
+}
+
+#title {
+    font-size: 34px;
+    color: #000000;
+}
+
+#root_laptop_div {
+    width: 1176px;
+    height: auto;
+}
+
+#first_laptop_div,
+#second_laptop_div {
+    width: 563px;
+    height: 205px;
+    border-radius: 20px;
+    background-color: #EAFAFF;
+}
+
+#patops_img {
+    height: 178px;
+    width: 266px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    margin-top: 13px;
+}
+
+#leptop_author_name,
+#leptop_author_pc {
+    font-size: 18px;
+}
+
+#read_more {
+    color: #4386A9;
+    font-size: 16px;
+}
+
+#root_laptop_info_div {
+    width: 1178px;
+    height: auto;
+}
+
+#laptop_img_div {
+    width: 601px;
+    height: 342px;
+}
+
+#mob_leanding_image {
+    width: 268.58px;
+    height: 349px;
+}
+
+#mob_leanding_div {
+    margin-top: 30%;
+    margin-left: 15%;
+}
+.bi{
+    cursor: pointer;
+}
+.radio_div{
+    width: 130px;
+    border-bottom: 1px solid red
+}
+
+.radio1_div{
+
+    width: 190px;
+    border-bottom: 1px solid red
+}
+
+
+
+

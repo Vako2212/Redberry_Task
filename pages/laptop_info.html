@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>თანამშრომლის ინფო</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../inlinecss/main.css">
+    <link rel="stylesheet" href="../inlinecss/media_query.css">
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" ></script>
+</head>
+
+<body>
+   <div id="desktop_view">
+       <div id="chevron_div">
+           <svg onclick="history.back()" xmlns="http://www.w3.org/2000/svg " id="chevron_left" width="16" height="16" fill="currentColor" class="bi bi-chevron-left cursor-pointer" viewBox="0 0 16 16">
+               <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+           </svg>
+       </div>
+       <div class="d-flex justify-content-center" id="headline">
+           <div class="" >
+               <a href="./personal.html">თანამშრომლის ინფო</a>
+           </div>
+           <div class="ms-4" id="headline_prsonal_info">
+               <span>ლეპტოპის მახასიათებელი</span>
+           </div>
+       </div>
+       <div id="laptop_info" class="mx-auto shadow-lg p-3 mb-5 bg-body mt-4 rounded">
+           <form id="laptop_form" class=" mx-auto">
+               <div class="mt-3" id="img_upload_div">
+                   <div id="img_upload_text"  >
+                       <div id="img_text_div">
+                           <span class="w-100"> ჩააგდე ან ატვირთე</span><br>
+                           <span class="w-100 mt-4">ლეპტოპის ფოტო</span>
+                       </div>
+                       <input type="file" class="btn" id="upload_btn">ატვირთე</input>
+                   </div>
+               </div>
+               <div class="container mt-5">
+                   <div class="row border-bottom pb-5">
+                       <div class="col">
+                           <label for="exampleInputEmail1" class="form-label">ლეპტოპის სახელი</label>
+                           <input type="email" class="form-control text-uppercase"  placeholder="hp" id="laptop_name" aria-describedby="emailHelp">
+                           <div class="form-text">ლათინური ასოები, ციფრები, !@#$%^&*()_+= </div>
+                       </div>
+                       <div class="col" id="select_col">
+                           <select class="form-select" id="brand">
+                               <option value="" selected>ლეპტოპის ბრენდი</option>
+                               <option value="1">One</option>
+                               <option value="2">Two</option>
+                               <option value="3">Three</option>
+                           </select>
+                       </div>
+                   </div>
+               </div>
+               <div class="container mt-5">
+                   <div class="row border-bottom pb-5">
+                       <div class="col">
+                           <select class="form-select" id="cpu">
+                               <option value="" selected>CPU</option>
+                               <option value="1">One</option>
+                               <option value="2">Two</option>
+                               <option value="3">Three</option>
+                           </select>
+                       </div>
+                       <div class="col">
+                           <label class="form-label">CPU-ს ბირთვი</label>
+                           <input type="email" class="form-control text-uppercase" onkeypress="return isNumber(event)" id="cpu_core" placeholder="14">
+                           <div class="form-text">მხოლოდ ციფრები </div>
+                       </div>
+                       <div class="col">
+                           <label class="form-label">CPU-ს ნაკადი</label>
+                           <input type="email" class="form-control text-uppercase" id="cpu_thread" onkeypress="return isNumber(event)" placeholder="365">
+                           <div  class="form-text">მხოლოდ ციფრები </div>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="container mt-5">
+                   <div class="row border-bottom pb-5">
+                       <div class="col">
+                           <label class="form-label">ლეპტოპის RAM (GB)</label>
+                           <input type="email" class="form-control text-uppercase" id="ram" onkeypress="return isNumber(event)" placeholder="16">
+                           <div id="emailHelp" class="form-text">მხოლოდ ციფრები </div>
+                       </div>
+                       <div class="col ms-5">
+
+
+                           <label class="form-label">მეხსიერების ტიპი</label>
+                           <div class="d-flex justify-content-start mt-2 " id="radio">
+                               <div class="form-check">
+                                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="1">
+                                   <label class="form-check-label" >
+                                       SSD
+                                   </label>
+                               </div>
+                               <div class="form-check ms-3">
+                                   <input class="form-check-input"  type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="2">
+                                   <label class="form-check-label" for="flexRadioDefault2">
+                                       HDD
+                                   </label>
+                               </div>
+                           </div>
+
+                       </div>
+                   </div>
+               </div>
+               <div class="container mt-5">
+                   <div class="row">
+                       <div class="col">
+                           <label class="form-label">შეძენის რიცხვი(არჩევითი)</label>
+                           <input type="date" class="form-control text-uppercase"  placeholder="365" aria-describedby="emailHelp">
+
+                       </div>
+                       <div class="col">
+                           <label class="form-label">ლეპტოპის ფასი</label>
+                           <input type="email" class="form-control text-uppercase" id="price" onkeypress="return isNumber(event)" placeholder="365">
+                           <div  class="form-text">მხოლოდ ციფრები </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="container mt-5">
+                   <div class="row">
+                       <div class="col">
+                           <label class="form-label">ლეპტოპის მდგომარეობა</label>
+                           <div class="d-flex justify-content-start mt-2" id="radios">
+                               <div class="form-check">
+                                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="second_radio" value="1">
+                                   <label class="form-check-label">
+                                       ახალი
+                                   </label>
+                               </div>
+                               <div class="form-check ms-3">
+                                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="second_radio" value="2">
+                                   <label class="form-check-label" for="flexRadioDefault2">
+                                       მეორადი
+                                   </label>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col">
+
+                       </div>
+                   </div>
+
+               </div>
+               <div class="mt-5 d-flex justify-content-between">
+                   <div class="mt-4">
+                       <a  href="./personal.html" class="p-3" id="back" >უკან</a>
+                   </div>
+                   <div>
+                       <button class="btn p-3" id="save_btn" type="button" onclick="SaveData()">დამახსოვრება</button>
+                   </div>
+               </div>
+           </form>
+       </div>
+
+       <div class="d-flex justify-content-center mt-4 pb-4">
+           <img src="../img/main_redberry_logo.png" id="main_redberry_logo">
+       </div>
+   </div>
+
+<div class="d-block d-sm-none">
+    <div id="bg_headline">
+        <div id="chevron_div_sm">
+            <svg xmlns="http://www.w3.org/2000/svg " id="chevron_left" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+            </svg>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="mt-1">
+                <span class="">ლეპტოპის მახასიათებლები</span> <br>
+                <span class="text-center d-block d-sm-none pb-3" id="sm_text">2/2</span>
+            </div>
+        </div>
+    </div>
+    <div class="m-2 mt-5 pt-2 p-3" >
+        <form class="mt-5">
+            <div class="row mb-3">
+                <div class="col-sm-10" id="photo_upload_div">
+                    <img src="../img/photo.png" id="photo_img">
+                    <span id="text_photo_img" class="text-center">ლეპტოპის ფოტოს<br>ატვირთვა</span>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="name_input" class="col-sm-2 ms-1 col-form-label laptop_text_t">ლეპტოპის სახელი</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control py-3 px-3" id="name_input" placeholder="HP" required>
+                </div>
+                <label for="name_input"  class="col-sm-2 ms-1 col-form-label laptop_text_b">ლათინური ასოები, ციფრები, !@#$%^&*()_+=</label>
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm-10">
+                    <select class="form-select py-3 px-3" id="personal_position_team" aria-label="Default select example">
+                        <option selected>ლეპტოპის ბრენდი</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mt-3 mb-3 pb-3  wraper_div">
+
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm-10">
+                    <select class="form-select py-3 px-3" id="personal_position_team" aria-label="Default select example">
+                        <option selected>CPU</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="name_input" class="col-sm-2 ms-1 col-form-label laptop_text_t">CPU-ს ბირთვი</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control py-3 px-3" id="name_input" placeholder="14" required>
+                </div>
+                <label for="name_input"  class="col-sm-2 ms-1 col-form-label laptop_text_b">მხოლოდ ციფრები</label>
+            </div>
+            <div class="row mb-3">
+                <label for="name_input" class="col-sm-2 ms-1 col-form-label laptop_text_t">CPU-ს ნაკადი</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control py-3 px-3" id="name_input" placeholder="365" required>
+                </div>
+                <label for="name_input"  class="col-sm-2 ms-1 col-form-label laptop_text_b">მხოლოდ ციფრები</label>
+            </div>
+            <div class="row mb-3">
+                <label for="name_input" class="col-sm-2 ms-1 col-form-label laptop_text_t">ლეპტოპის RAM (GB)</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control py-3 px-3" id="name_input" placeholder="16" required>
+                </div>
+                <label for="name_input"  class="col-sm-2 ms-1 col-form-label laptop_text_b">მხოლოდ ციფრები</label>
+            </div>
+            <div class="row mb-3">
+                <label for="name_input" class="col-sm-2 ms-1 col-form-label laptop_text_t">მეხსიერების ტიპი</label>
+                <div class="col-sm-10">
+                   <div class="d-flex justify-content-start mt-2">
+                       <div class="form-check">
+                           <input class="form-check-input" type="radio" name="flexRadioDefault" >
+                           <label class="form-check-label" for="flexRadioDefault1">
+                               SSD
+                           </label>
+                       </div>
+                       <div class="form-check ms-5">
+                           <input class="form-check-input " type="radio" name="flexRadioDefault">
+                           <label class="form-check-label" for="flexRadioDefault1">
+                               HDD
+                           </label>
+                       </div>
+                   </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="name_input" class="col-sm-2 ms-1 col-form-label laptop_text_t">შეძენის რიცხვი (არჩევითი)</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control py-3 px-3" id="name_input" placeholder="დდ / თთ / წწწწ" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="name_input" class="col-sm-2 ms-1 col-form-label laptop_text_t">ლეპტოპის ფასი</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control py-3 px-3" id="name_input" placeholder="0000" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="name_input" class="col-sm-2 ms-1 col-form-label laptop_text_t">მეხსიერების ტიპი</label>
+                <div class="col-sm-10">
+                    <div class="d-flex justify-content-start mt-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" >
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                ახალი
+                            </label>
+                        </div>
+                        <div class="form-check ms-5">
+                            <input class="form-check-input " type="radio" name="flexRadioDefault">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                მეორადი
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3 mt-4">
+                <div class="d-flex justify-content-between">
+                    <div class="pb-4 pt-3">
+                        <a id="back">უკან</a>
+                    </div>
+                    <div class="pb-4 pt-3">
+                        <button class="btn btn-light" id="save_btn_lp" >დამახსოვრება</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+<script src="../js/laptop_info.js"></script>
+</html>
