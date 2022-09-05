@@ -8,221 +8,271 @@
     <title>თანამშრომლის ინფო</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="../inlinecss/main.css">
-    <script src="../bootstrap/js/bootstrap.js"></script>
     <link rel="stylesheet" href="../inlinecss/media_query.css">
+
 </head>
 
 <body id="laptops_page">
-<div id="desktop_view">
-    <div id="chevron_div">
-        <svg onclick="history.back()" xmlns="http://www.w3.org/2000/svg " id="chevron_left" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-        </svg>
+    <div class="loader-container">
+        <div class="loader"></div>
     </div>
-    <div class="d-flex justify-content-center" id="headline">
-        <div class="ms-4">
-            <span id="title">ლეპტოპის ინფო</span>
+    <div id="desktop_view">
+        <div id="chevron_div">
+            <svg onclick="history.back()" xmlns="http://www.w3.org/2000/svg " id="chevron_left" width="16" height="16"
+                fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+            </svg>
         </div>
-    </div>
-    <div id="root_laptop_info_div" class="mx-auto mt-5 ">
-        <div class="d-flex justify-content-start  border-bottom pb-5">
-            <div id="laptop_img_div">
-                <img src="../img/laptop.png">
-            </div>
-            <div id="laptop_sm-description" class="d-block ms-5 mt-5">
-                <div class="d-flex justify-content-between">
-                    <div>
-                        <span>სახელი</span>
-                    </div>
-                    <div class="">
-                        <span>აკაკი წერეთელი</span>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-between mt-3">
-                    <div>
-                        <span>თიმი</span>
-                    </div>
-                    <div class="ms-5">
-                        <span>დიზაინერები</span>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-between mt-3">
-                    <div>
-                        <span>პოზიცია</span>
-                    </div>
-                    <div class="ms-5">
-                        <span>ილუსტრატორი</span>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-between mt-3">
-                    <div>
-                        <span>მეილი</span>
-                    </div>
-                    <div class="ms-5">
-                        <span>hades11@redberry.ge</span>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-between mt-3">
-                    <div>
-                        <span>ტელ.ნიმერი</span>
-                    </div>
-                    <div class="ms-5">
-                        <span>+995 583 45 28 33</span>
-                    </div>
-                </div>
+        <div class="d-flex justify-content-center" id="headline">
+            <div class="ms-4">
+                <span id="title">ლეპტოპის ინფო</span>
             </div>
         </div>
-
-
-        <div class="container px-4 mt-4 border-bottom pb-5">
-            <div class="row gx-5">
-                <div class="col">
-                    <div class="p-3">
-                        <div class="d-flex justify-content-between text-center align-content-center ms-4 me-4">
-                            <div>
-                                ლეპტოპის სახელი
-                            </div>
-                            <div>
-                                Razor Bla Bla
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="p-3">
-                        <div class="d-flex justify-content-between text-center align-content-center ms-4 me-4">
-                            <div>
-                                CPU:
-                            </div>
-                            <div>
-                                Intel 5
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container px-4 mt-5 pb-5">
-            <div class="row gx-5">
-                <div class="col">
-                    <div class="p-3">
-                        <div class="d-flex justify-content-between text-center align-content-center ms-4 me-4">
-                            <div>
-                                ლეპტოპის მდგომარეობა
-                            </div>
-                            <div>
-                                მეორადი
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="p-3">
-                        <div class="d-flex justify-content-between text-center align-content-center ms-4 me-4">
-                            <div>
-                                შევსების რიცხვი
-                            </div>
-                            <div>
-                                12 / 06 / 2130
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<div class="d-block d-sm-none">
-    <div id="bg_headline_lp">
-        <div class="d-flex justify-content-start p-4 text-center">
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg " width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-                </svg>
-            </div>
-            <div>
-                <div class="ms-5" >
-                    <span class="ms-5">ᲚᲔᲞᲢᲝᲞᲘᲡ ᲘᲜᲤᲝ</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="m-2 mt-2 pt-5 p-3">
-            <div class="mt-5">
-                <div id="laptop_div" class="row mb-3">
+        <div id="root_laptop_info_div" class="mx-auto mt-5">
+            <div class="d-flex justify-content-start border-bottom pb-5 parent_container">
+                <div id="laptop_img_div">
                     <img src="../img/laptop.png">
                 </div>
-            </div>
-
-            <div class="mt-5">
-                <div class="row mb-3 border-2 border-bottom">
-                   <div class="d-flex justify-content-start mb-5">
-                       <div>
-                           <span class="name">სახელი:</span><br>
-                           <span class="name">თიმი:</span><br>
-                           <span class="name">პოზიცია:</span><br>
-                           <span class="name">მეილი:</span><br>
-                           <span class="name">ტელ. ნომერი:</span><br>
-
-                       </div>
-                       <div class="ms-5">
-                           <span class="ms-5 name_v">აკაკი წერეთელი</span><br>
-                           <span class="ms-5 name_v">დიზაინერები</span><br>
-                           <span class="ms-5 name_v">ილუსტრატორი</span><br>
-                           <span class="ms-5 name_v">ako@redberry.ge</span><br>
-                           <span class="ms-5 name_v">+995 583 45 28 33</span><br>
-                       </div>
-                   </div>
-                </div>
-
-                <div class="row mb-3 border-2 border-bottom">
-                    <div class="d-flex justify-content-start mb-5">
+                <div id="laptop_sm-description" class="d-block  mt-5">
+                    <div class="my-field-name">
                         <div>
-                            <span class="name">ლეპტოპის სახელი::</span><br>
-                            <span class="name">ლეპტოპის ბრენდი:</span><br>
-                            <span class="name">RAM:</span><br>
-                            <span class="name">მეხსიერების ტიპი:</span><br>
-                            <span class="name">CPU:</span><br>
-                            <span class="name">CPU-ს ბირთვი:</span><br>
-                            <span class="name">CPU-ს ნაკადი:</span><br>
-
+                            <span class="my-bold-text">სახელი:</span>
                         </div>
-                        <div class="ms-5">
-                            <span class="ms-5 name_v">Razor Blade</span><br>
-                            <span class="ms-5 name_v">HP</span><br>
-                            <span class="ms-5 name_v">16</span><br>
-                            <span class="ms-5 name_v">SSD</span><br>
-                            <span class="ms-5 name_v">Intel 5</span><br>
-                            <span class="ms-5 name_v">14</span><br>
-                            <span class="ms-5 name_v">456</span><br>
+                        <div class="dynamicProperty" name="userName">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="my-field-name mt-3">
+                        <div>
+                            <span class="my-bold-text">თიმი:</span>
+                        </div>
+                        <div class=" dynamicProperty" name="teamName">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="my-field-name mt-3">
+                        <div>
+                            <span class="my-bold-text">პოზიცია:</pan>
+                        </div>
+                        <div class=" dynamicProperty" name="teamPosition">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="my-field-name mt-3">
+                        <div>
+                            <span class="my-bold-text">მეილი:</span>
+                        </div>
+                        <div class=" dynamicProperty" name="email">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="my-field-name mt-3">
+                        <div>
+                            <span class="my-bold-text">ტელ.ნომერი:</span>
+                        </div>
+                        <div class=" dynamicProperty" name="mobilePhone">
+                            <span></span>
                         </div>
                     </div>
                 </div>
+            </div>
 
 
-                <div class="row mb-3">
-                    <div class="d-flex justify-content-start mb-5">
-                        <div>
-                            <span class="name">მდგომარეობა:</span><br>
-                            <span class="name">ლეპტოპის ფასი:</span><br>
-                            <span class="name">შევსების რიცხვი:</span><br>
-
+            <div class="container px-4 mt-4 border-bottom pb-5">
+                <div class="row gx-5">
+                    <div class="col">
+                        <div class="p-3">
+                            <div class="my-field-name  align-content-center ms-4 me-4">
+                                <div class="my-bold-text">
+                                    ლეპტოპის სახელი:
+                                </div>
+                                <div class="dynamicProperty" name="laptopName">
+                                </div>
+                            </div>
+                            <div class="my-field-name  align-content-center ms-4 me-4 mt-2">
+                                <div class="my-bold-text">
+                                    ლეპტოპის ბრენდი:
+                                </div>
+                                <div class="dynamicProperty" name="laptopBrand">
+                                </div>
+                            </div>
+                            <div class="my-field-name  align-content-center ms-4 me-4 mt-2">
+                                <div class="my-bold-text">
+                                    RAM:
+                                </div>
+                                <div class="dynamicProperty" name="memoryAmount">
+                                </div>
+                            </div>
+                            <div class="my-field-name  align-content-center ms-4 me-4 mt-2">
+                                <div class="my-bold-text">
+                                    მეხსიერების ტიპი:
+                                </div>
+                                <div class="dynamicProperty" name="memoryType">
+                                </div>
+                            </div>
                         </div>
-                        <div class="ms-5">
-                            <span class="ms-5 name_v">მეორადი</span><br>
-                            <span class="ms-5 name_v">1500 ₾</span><br>
-                            <span class="ms-5 name_v">15 / 12 / 1980</span><br>
+                    </div>
+                    <div class="col">
+                        <div class="p-3">
+                            <div class="my-field-name  align-content-center  me-4">
+                                <div class="my-bold-text">
+                                    CPU:
+                                </div>
+                                <div class="dynamicProperty" name="cpuName">
+                                </div>
+                            </div>
+                            <div class="my-field-name  align-content-center  me-4 mt-2">
+                                <div class="my-bold-text">
+                                    CPU-ს ბირთვი:
+                                </div>
+                                <div class="dynamicProperty" name="cpuCores">
+                                </div>
+                            </div>
+                            <div class="my-field-name  align-content-center  me-4 mt-2">
+                                <div class="my-bold-text">
+                                    CPU-ს ნაკადი:
+                                </div>
+                                <div class="dynamicProperty" name="cpuThreads">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container px-4 mt-5 pb-5">
+                <div class="row gx-5">
+                    <div class="col">
+                        <div class="p-3">
+                            <div class="my-field-name  align-content-center ms-4 me-4">
+                                <div class="my-bold-text">
+                                    ლეპტოპის მდგომარეობა:
+                                </div>
+                                <div class="dynamicProperty" name="laptopCondition">
+                                </div>
+                            </div>
+                            <div class="my-field-name  align-content-center ms-4 me-4 mt-2">
+                                <div class="my-bold-text">
+                                    ლეპტოპის ფასი:
+                                </div>
+                                <div>
+                                    <span class="dynamicProperty" name="laptopPrice"></span><span class='ms-2'>₾</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3">
+                            <div class="my-field-name  align-content-center  me-4">
+                                <div class="my-bold-text">
+                                    შევსების რიცხვი:
+                                </div>
+                                <div class="dynamicProperty" name="fillDate">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="d-block d-sm-none">
+        <div id="bg_headline_lp">
+            <div class="d-flex justify-content-start p-4 ">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg " width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                    </svg>
+                </div>
+                <div>
+                    <div class="">
+                        <span class="">ᲚᲔᲞᲢᲝᲞᲘᲡ ᲘᲜᲤᲝ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div class="m-2 mt-2 pt-5 p-3">
+                <div class="mt-5">
+                    <div id="laptop_div" class="row mb-3">
+                        <img src="../img/laptop.png">
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <div class="row mb-3 border-2 border-bottom my-bold-text ">
+                        <div class="d-flex justify-content-start mb-5">
+                            <div>
+                                <span class="name">სახელი:</span><br>
+                                <span class="name">თიმი:</span><br>
+                                <span class="name">პოზიცია:</span><br>
+                                <span class="name">მეილი:</span><br>
+                                <span class="name">ტელ. ნომერი:</span><br>
+
+                            </div>
+                            <div class="ms-5 fw-normal">
+                                <span class=" name_v dynamicProperty" name="userName"></span><br>
+                                <span class=" name_v dynamicProperty" name="teamName"></span><br>
+                                <span class=" name_v dynamicProperty" name="teamPosition"></span><br>
+                                <span class=" name_v dynamicProperty" name="email"></span><br>
+                                <span class=" name_v dynamicProperty" name="mobilePhone"></span><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3 border-2 border-bottom my-bold-text">
+                        <div class="d-flex justify-content-start mb-5 ">
+                            <div>
+                                <span class="name">ლეპტოპის სახელი:</span><br>
+                                <span class="name">ლეპტოპის ბრენდი:</span><br>
+                                <span class="name">RAM:</span><br>
+                                <span class="name">მეხსიერების ტიპი:</span><br>
+                                <span class="name">CPU:</span><br>
+                                <span class="name">CPU-ს ბირთვი:</span><br>
+                                <span class="name">CPU-ს ნაკადი:</span><br>
+
+                            </div>
+                            <div class="ms-4 fw-normal">
+                                <span class=" name_v dynamicProperty" name="laptopName"></span><br>
+                                <span class=" name_v dynamicProperty" name="laptopBrand"></span><br>
+                                <span class=" name_v dynamicProperty" name="memoryAmount"></span><br>
+                                <span class=" name_v dynamicProperty" name="memoryType"></span><br>
+                                <span class=" name_v dynamicProperty" name="cpuName"></span><br>
+                                <span class=" name_v dynamicProperty" name="cpuCores"></span><br>
+                                <span class=" name_v dynamicProperty" name="cpuThreads"></span><br>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-3 ">
+                        <div class="d-flex justify-content-start mb-5 my-bold-text">
+                            <div>
+                                <span class="name">მდგომარეობა:</span><br>
+                                <span class="name">ლეპტოპის ფასი:</span><br>
+                                <span class="name">შევსების რიცხვი:</span><br>
+
+                            </div>
+                            <div class="ms-5 fw-normal">
+                                <span class=" name_v dynamicProperty" name="laptopCondition"></span><br>
+                                <span class=" name_v dynamicProperty" name="laptopPrice"> ₾</span><br>
+                                <span class=" name_v dynamicProperty" name="fillDate"></span><br>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    <script src="../js/loader/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/Api/refactor/detailed-page-fetcher.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
 
 </body>
 

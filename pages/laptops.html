@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="../inlinecss/main.css">
     <link rel="stylesheet" href="../inlinecss/media_query.css">
-    <script src="../bootstrap/js/bootstrap.js"></script>
+    <script defer src="../bootstrap/js/bootstrap.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script  defer src="../js/Api/refactor/laptops-data-fetcher.js"></script>
 </head>
 
 <body id="laptops_page">
@@ -26,41 +28,8 @@
        </div>
        <div id="root_laptop_div" class="mx-auto  mt-5">
            <div class="container">
-               <div class="row mt-2">
-                   <div class="col ms-3 d-flex justify-content-start" id="first_laptop_div">
-                       <div id="patops_img">
-                           <img src="../img/pc.png">
-                       </div>
-                       <div class="d-block ms-4 mt-4">
-                           <div class="mt-4 ms-2">
-                               <span id="leptop_author_name">ირინე ჩანქსელიანი</span>
-                           </div>
-                           <div class="mt-4 ms-2">
-                               <span id="leptop_author_pc">Pentium II</span>
-                           </div>
-                           <div class="mt-4 ms-2">
-                               <a href="#" id="read_more">მეტის ნახვა</a>
-                           </div>
-                       </div>
+               <div class="row mt-2" id="pc_info">
 
-                   </div>
-                   <div class="col ms-3 d-flex justify-content-start" id="second_laptop_div">
-                       <div id="patops_img">
-                           <img src="../img/pc.png">
-                       </div>
-                       <div class="d-block ms-4 mt-4">
-                           <div class="mt-4 ms-2">
-                               <span id="leptop_author_name">ირინე ჩანქსელიანი</span>
-                           </div>
-                           <div class="mt-4 ms-2">
-                               <span id="leptop_author_pc">Pentium II</span>
-                           </div>
-                           <div class="mt-4 ms-2">
-                               <a href="#" id="read_more">მეტის ნახვა</a>
-                           </div>
-                       </div>
-
-                   </div>
                </div>
 
 
@@ -100,54 +69,7 @@
                        </div>
                    </div>
                </div>
-               <div id="card_div" class="row mb-3">
-                   <div class="d-flex justify-content-start">
-                       <div id="laptop_mob_div">
-                           <img src="../img/pc.png" class="img">
-                       </div>
-                       <div class="ms-4 mt-4">
-                           <span class="text-nowrap" id="owner">ირინე ჩანქსელიანი</span>
-                           <span class="text-nowrap" id="owner_pc">PENTIUM II</span><br>
-                           <a href="#" id="read_more_lp" class="mt-2">მეტის ნახვა</a>
-                       </div>
-                   </div>
-               </div>
-               <div id="card_div" class="row mb-3">
-                   <div class="d-flex justify-content-start">
-                       <div id="laptop_mob_div">
-                           <img src="../img/pc.png" class="img">
-                       </div>
-                       <div class="ms-4 mt-4">
-                           <span class="text-nowrap" id="owner">ირინე ჩანქსელიანი</span>
-                           <span class="text-nowrap" id="owner_pc">PENTIUM II</span><br>
-                           <a href="#" id="read_more_lp" class="mt-2">მეტის ნახვა</a>
-                       </div>
-                   </div>
-               </div>
-               <div id="card_div" class="row mb-3">
-                   <div class="d-flex justify-content-start">
-                       <div id="laptop_mob_div">
-                           <img src="../img/pc.png" class="img">
-                       </div>
-                       <div class="ms-4 mt-4">
-                           <span class="text-nowrap" id="owner">ირინე ჩანქსელიანი</span>
-                           <span class="text-nowrap" id="owner_pc">PENTIUM II</span><br>
-                           <a href="#" id="read_more_lp" class="mt-2">მეტის ნახვა</a>
-                       </div>
-                   </div>
-               </div>
-               <div id="card_div" class="row mb-3">
-                   <div class="d-flex justify-content-start">
-                       <div id="laptop_mob_div">
-                           <img src="../img/pc.png" class="img">
-                       </div>
-                       <div class="ms-4 mt-4">
-                           <span class="text-nowrap" id="owner">ირინე ჩანქსელიანი</span>
-                           <span class="text-nowrap" id="owner_pc">PENTIUM II</span><br>
-                           <a href="#" id="read_more_lp" class="mt-2">მეტის ნახვა</a>
-                       </div>
-                   </div>
-               </div>
+
 
 
            </div>

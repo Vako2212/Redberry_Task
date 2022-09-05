@@ -1,0 +1,239 @@
+@media (max-width: 480px) {
+    #btn_div {
+        margin-top: 170px;
+    }
+}
+
+@media (max-width: 480px) {
+    #desktop_view{
+        display: none;
+    }
+    #desktop_view{
+         display: none;
+     }
+   #chevron_div_sm{
+       background-color: transparent;
+       margin-top: 7px;
+   }
+
+
+    #mobile_view{
+        max-width: 390px;
+        max-height: 1003px;
+        display: block;
+    }
+
+    #bg_headline{
+        position: absolute;
+        top: 0;
+        width: 390px;
+        background-color: #EBEBEB;
+        height: auto;
+    }
+
+    #sm_text{
+        font-size: 14px;
+        color: #898989;
+    }
+
+    #name_input,#lastname_input,#phone_input,#mail_input{
+        border-color: #8AC0E2;
+
+    }
+    .input_text_b{
+        font-size: 14px;
+        color: #2E2E2E;
+    }
+
+    #mobile_cpu,#mobile_brand{
+        background-color: #EBEBEB;
+    }
+
+    .input_text_t{
+        font-size: 18px;
+        color: #2E2E2E;
+    }
+
+    #personal_btn{
+        width: 132px;
+        height: 46px;
+        background-color: #62A1EB;
+        color: #FFFFFF;
+        border-radius: 8px;
+    }
+
+    #photo_upload_div{
+        border-style: dashed;
+        border-radius: 8px;
+        border-width: 2px;
+        width: 358px;
+        height: 244px;
+        background-color: #EBEBEB;
+        color: #4386A9;
+
+    }
+    #photo_img{
+        position: absolute;
+        top: 22%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    #text_photo_img{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .laptop_text_t{
+        font-size: 18px;
+        color: #000000;
+    }
+    .laptop_text_b{
+
+        font-size: 14px;
+        color: #2E2E2E;
+    }
+    #flexRadioDefault{
+        width: 20px;
+        height: 20px;
+
+    }
+    #save_btn_lp{
+
+        background-color: #62A1EB;
+        color: #FFFFFF;
+    }
+
+    #card_div{
+        width: 358px;
+        height: 123px;
+        background-color: #AED1EA;
+        border-radius: 10px;
+
+    }
+
+    #laptop_mob_div{
+        width: 164px;
+        height: 109px;
+
+    }
+    .img{
+        width: 164px;
+        height: 109px;
+        margin-top: 7px;
+
+    }
+
+    #owner{
+        font-size: 14px;
+        color: #2E2E2E;
+    }
+    #owner_pc{
+        font-size: 18px;
+        color: #2E2E2E;
+    }
+    #read_more_lp{
+        font-size: 14px;
+        color: #4386A9;
+    }
+    #laptop_div{
+        width: 358px;
+        height: 191px;
+
+     }
+
+    #bg_headline_lp{
+        position: absolute;
+        top: 0;
+        width: 390px;
+        background-color: #FFFFFF;
+        height: auto;
+    }
+
+    .name{
+        font-size: 14px;
+        color: #2E2E2E;
+    }
+    .name_v{
+        font-size: 14px;
+        color: #797979;
+    }
+
+    .radio_mb{
+
+        width: 170px;
+        border-bottom: 1px solid red
+    }
+
+    .state{
+        width: 220px;
+        border-bottom: 1px solid red
+    }
+
+    #done_icon_mb{
+        width: 22px;
+        height: 22px;
+        color: #BED918;
+        position: absolute;
+        left: 10px;
+        margin-top: 10px;
+    }
+    #img_mb_name{
+        color: #202020;
+        font-size: 14px;
+        margin-left: 20px;
+
+
+    }
+    #img_mb_size{
+        color: #5F5F5F;
+        font-size: 13px;
+        margin-left: 34px;
+    }
+    .upload_mb{
+        width: 200px;
+        height: 45px;
+        color: #4386A9;
+    }
+
+    #image_src_mb{
+        object-fit: cover;
+        position: absolute;
+        right: 6%;
+        width: 350px;
+        height: 238px;
+        border: none;
+        border-radius: 8px;
+        text-indent: -10000px
+    }
+    #warning_sm{
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        color: #C9CB52;
+    }
+    #memory_warn{
+        color: #C9CB52;
+    }
+    #state_warn{
+        color: #C9CB52;
+    }
+
+    .backdrop {
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+    }
+
+
+}
+
