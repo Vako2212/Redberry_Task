@@ -1,4 +1,5 @@
 const image_input = document.querySelector("#upload_btn");
+const accessToken="ae4dc40709e6cb18b63810a1dfe5a8eb";
 
 image_input.addEventListener("change", function() {
     const reader = new FileReader();

@@ -53,20 +53,13 @@ function setDefaultRadioValues(ssdRadioId, hddRadioId,newRadioId,usedRadioId) {
     }
 }
 
-function onFormSubmit() {
 
-
-    // on success from backend
-    showModal()
-
-
-}
 
 
 
 function showModal() {
     const bodyElement = document.querySelector('body');
-    const modalBackdrop = document.querySelector('.backdrop');
+    const modalBackdrop = document.querySelector('.backdrop');debugger;
     bodyElement.classList.add('hidden_overflow');
     modalBackdrop.classList.add('set_visible');
 
