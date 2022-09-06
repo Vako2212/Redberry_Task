@@ -9,21 +9,26 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="../inlinecss/main.css">
     <link rel="stylesheet" href="../inlinecss/media_query.css">
-
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/Api/GetRequest.js"></script>
+    <script src="../js/mobile/Api/GetRequest.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/laptop-info/save-fields-data.js"></script>
 
 
 </head>
 
-<body class="">
+<body class="hidden_overflow">
    <div id="desktop_view">
-        <div class="backdrop ">
+        <div class="backdrop set_visible">
             <div class="modal card">
                 <div class="modal_image"><img src="../img/success.png" alt="success"></div>
                 <p class="modal_message">ჩანაწერი დამატებულია!</p>
 
                 <div class="modal_button_group">
                     <button id="go_to_list" class="button button_main">სიაში გადაყვანა</button>
-                    <button id="main_page" class="button button_secondary">მთავარი</button>
+                    <button id="main_page" class="button button_secondary">მთავარი</button>    
                 </div>
             </div>
         </div>
@@ -116,13 +121,13 @@
                            <label class="form-label">მეხსიერების ტიპი</label>
                            <div class="d-flex justify-content-start mt-2 " id="radio">
                                <div class="form-check">
-                                   <input class="form-check-input" type="radio" name="flexRadioDefault"  id="flexRadioDefault1" value="SSD">
+                                   <input class="form-check-input" type="radio" name="flexRadioDefault"  id="flexRadioDefault1" value="ssd">
                                    <label class="form-check-label" >
                                        SSD
                                    </label>
                                </div>
                                <div class="form-check ms-3">
-                                   <input class="form-check-input"   checked type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="HDD">
+                                   <input class="form-check-input"   checked type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="hdd">
                                    <label class="form-check-label" for="flexRadioDefault2">
                                        HDD
                                    </label>
@@ -177,7 +182,7 @@
                    </div>
                    <div>
 <!--                       <button class="btn p-3" id="save_btn" type="button" onclick="SaveData()">დამახსოვრება</button>-->
-                       <button class="btn p-3" id="save_btn" type="button" onclick="saveData()">დამახსოვრება</button>
+                       <button class="btn p-3" id="save_btn" type="button" onclick="SaveData()">დამახსოვრება</button>
 
                    </div>
                </div>
@@ -197,7 +202,7 @@
 
             <div class="modal_button_group">
                 <button id="go_to_list" class="button button_main">სიაში გადაყვანა</button>
-                <button id="main_page" class="button button_secondary">მთავარი</button>
+                <button id="main_page" class="button button_secondary">მთავარი</button>    
             </div>
         </div>
     </div>
@@ -371,7 +376,7 @@
 <script>
 
     if(window.innerWidth <= 991){
-        loadScriptFile('../js/laptop_info.js');
+        loadScriptFile('../js/mobile/laptop_info.js');
     }
     else{
         loadScriptFile('../js/laptop_info.js');
@@ -382,9 +387,4 @@
         document.body.appendChild(myScript);
     }
 </script>
-<script src="../bootstrap/js/bootstrap.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="../js/Api/GetRequest.js"></script>
-<script src="../js/laptop-info/save-fields-data.js"></script>
-<script src="../js/Api/refactor/detailed-page-post.js"></script>
 </html>
